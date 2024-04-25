@@ -3,6 +3,9 @@ Car -> store the esstential elements of a car
 CarBuilder -> builder w/ different functions
 Director -> To assign builder to build Car
 
+Focusing on a set of construction functions
+Return self (chaining) is critical !
+
 """
 
 

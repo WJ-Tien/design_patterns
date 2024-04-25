@@ -1,10 +1,14 @@
+"""
+provide a common factory for same types but different implementation
+ABC, abstractmethod are often used
+"""
 from abc import ABC, abstractmethod
 
 
 class CarFactory(ABC):
     @abstractmethod
     def boost(self):
-        pass
+        
 
     @abstractmethod
     def brake(self):
