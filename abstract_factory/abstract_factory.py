@@ -2,21 +2,22 @@
 provide a common factory for same types but different implementation
 ABC, abstractmethod are often used
 """
+
 from abc import ABC, abstractmethod
 
 
 class CarFactory(ABC):
     @abstractmethod
     def boost(self):
-        
+        raise NotImplementedError
 
     @abstractmethod
     def brake(self):
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def drift(self):
-        pass
+        raise NotImplementedError
 
 
 class CarA(CarFactory):
