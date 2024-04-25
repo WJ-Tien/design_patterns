@@ -1,6 +1,7 @@
 """
 provide a common factory for same types but different implementation
 ABC, abstractmethod are often used
+Must implement the same method as abstract factory
 """
 
 from abc import ABC, abstractmethod
