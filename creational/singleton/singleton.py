@@ -11,6 +11,7 @@
 # super() --> object.__new__(cls)
 # rewrite __new__ --> new needs a return value
 # hence we inherit from object and call __new__ of it
+# super().__new__(cls) --> is only a empty cls class object, won't do anything (e.g., __new__)
 class Singleton:
     _instance = None
 
