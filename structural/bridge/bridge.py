@@ -3,6 +3,7 @@ Two different classes
 One act as implementation, while the other acts as abstraction
 abstraction takes implementation as input, and implement methods based on impl's methods
 Prevent imple * abstract combinations of classes
+Example: CarKey -> Car (car_ops)
 """
 
 from abc import ABC, abstractmethod
