@@ -2,6 +2,7 @@
 Two different classes
 One act as implementation, while the other acts as abstraction
 abstraction takes implementation as input, and implement methods based on impl's methods
+--> abstraction calls implementation (better separation)
 Prevent imple * abstract combinations of classes
 Example: CarKey -> Car (car_ops)
 """
