@@ -4,6 +4,7 @@ next_handler here stores "next handler"
 with next_handler is not None, we can call next_handler's handle method
 
 """
+
 from abc import ABC, abstractmethod
 from typing import Optional, Union
 
@@ -19,7 +20,6 @@ class CarHandler(ABC):
 
 
 class AbstractCarHandler(CarHandler):
-
     _next_handler: CarHandler = None
 
     def set_next(self, handler: CarHandler) -> CarHandler:
@@ -54,8 +54,7 @@ class CarCHandler(AbstractCarHandler):
 
 
 def client(handler: CarHandler) -> None:
-
-    cars = ['CarA', 'CarB', 'CarC']
+    cars = ["CarA", "CarB", "CarC"]
     for car in cars:
         result = handler.handle(car)
         if result:
