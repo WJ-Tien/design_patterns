@@ -1,9 +1,10 @@
 """
-command -> command interface (has certain common funcs)
+command -> command interface (has certain common funcs e.g. execute)
+-> execute send request to execute funcs in the receiver
 Invoker -> set command
 receiver -> actual executor; real business logic
 
-client -> command -> invoker -> receiver
+client -> invoker -> send/set command -> (receiver)
 
 """
 
